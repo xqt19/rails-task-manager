@@ -1,0 +1,24 @@
+<div class="h-100 mx-10" style="border: 1px solid black">
+    <div class="d-flex justify-content-center p-3">
+        <h1>Create a new task!</h1>
+    </div>
+    <br>
+
+    <div class="d-flex justify-content-center p-3">
+    <%= render 'form', task: @task %>
+    </div>
+    <!-- <div class="d-flex justify-content-center p-3">
+        <form action="/create" method="post">
+            <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+            <div class="form-group">
+                <label for="name">Task Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Gym">
+            </div>
+            <div class="form-group">
+                <label for="desc">Description</label>
+                <input type="text" class="form-control" id="desc" placeholder="2.4km Run!">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div> -->
+</div>

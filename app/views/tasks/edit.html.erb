@@ -1,0 +1,23 @@
+<div class="h-100 mx-10" style="border: 1px solid black">
+    <div class="d-flex justify-content-center p-3">
+        <h1><%= @task.title %></h1>
+    </div>
+    <br>
+    <div class="d-flex justify-content-center p-3">
+    <%= render 'form', task: @task %>
+    </div>
+    <!-- <div class="d-flex justify-content-center p-3">
+        <form action="/task" method="post">
+            <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+            <div class="form-group">
+                <label for="name">Task Name</label>
+                <input type="text" class="form-control" id="name" placeholder="" value=<%= @task.title %> >
+            </div>
+            <div class="form-group">
+                <label for="desc">Description</label>
+                <input type="text" class="form-control" id="desc" placeholder="" value=<%= @task.details %>>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div> -->
+</div>

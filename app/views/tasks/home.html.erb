@@ -1,0 +1,19 @@
+<div class="h-100 mx-10" style="border: 1px solid black">
+    <div class="d-flex justify-content-center p-3">
+        <h1>My Tasks</h1>
+    </div>
+    <br>
+    <div class="d-flex justify-content-center">
+        <!-- <ul style="list-style-type:none"> -->
+        <ul>
+            <% @tasks.each do |task| %>
+            <li>
+                <%= link_to task.title, show_path(task) %><%= link_to "(delete)", delete_path(task), method: :delete %>
+            </li>
+            <% end %>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-center">
+        <%= link_to 'Add a new task', new_path  %>
+    </div>
+</div>
